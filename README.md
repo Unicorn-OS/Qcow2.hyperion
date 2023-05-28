@@ -5,7 +5,12 @@ Disk image format!
 ```
 compressAndShrink(){
   # https://pve.proxmox.com/wiki/Shrink_Qcow2_Disk_Files
-  # example:
+  # Singularity example:
   qemu-img convert -p -O qcow2 -c gamedata.qcow2 gamedata.qcow2_backup
 }
+```
+
+# Info
+```
+qemu-img info gamedata.qcow2
 ```
